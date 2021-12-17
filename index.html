@@ -15,29 +15,23 @@
         <input type="number" id="mass" placeholder="Mass in Kilogram" />
         <select>
             <option value='none'>--select planet-- </option>
-            <option value='earth'>EARTH</option>
-            <option value='jupiter'>JUPITER</option>
-            <option value='mars'>MARS</option>
-            <option value='mercury'>MERCURY</option>
-            <option value='moon'>MOON</option>
-            <option value='neptune'>NEPTUNE</option>
-            <option value='pluto'>PLUTO</option>
-            <option value='saturn'>SATURN</option>
-            <option value='uranus'>URANUS</option>
-            <option value='venus'>VENUS</option>
+            <option value='earth' data-gravity='9.8'>EARTH</option>
+            <option value='jupiter' data-gravity='23.1'>JUPITER</option>
+            <option value='mars' data-gravity='3.7'>MARS</option>
+            <option value='mercury' data-gravity='3.7'>MERCURY</option>
+            <option value='moon' data-gravity='1.6'>MOON</option>
+            <option value='neptune' data-gravity='11'>NEPTUNE</option>
+            <option value='pluto' data-gravity='0.7'>PLUTO</option>
+            <option value='saturn' data-gravity='9'>SATURN</option>
+            <option value='uranus' data-gravity='8.7'>URANUS</option>
+            <option value='venus' data-gravity='8.9'>VENUS</option>
         </select>
         <button>Calculate weight</button>
 
     </header>
     <main>
         <div class="flex-container">
-            <div class="flex-item image">
-                <img src='./img/earth.png' class="planet-image" />
-            </div>
-            <div class="flex-item description">
-                
-            </div>
-
+            
         </div>
 
 
@@ -52,6 +46,14 @@
             background-image: url(./img/galaxy.gif);
             color: #fff;
             text-align: center;
+        }
+
+        .flex-container {
+            height: 500px;
+            display: flex;
+            margin: 24px 0;
+            align-items: center;
+            justify-content: space-around;
         }
     </style>
     <script src="./index.js"></script>
