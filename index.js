@@ -30,7 +30,7 @@ button.addEventListener('click', e => {
                 `
                 description.innerHTML = `
                     The weight of the object on ${eachPlane.textContent}\n
-                    ${Math.round(value * gravity)}
+                    ${Math.round(value * gravity)} (N)
                 `
             }
         })
