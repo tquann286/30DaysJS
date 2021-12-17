@@ -1,0 +1,36 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+.graphs {
+    width: 100%;
+    margin: auto;
+}
+
+.graph-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+}
+
+.graph-name {
+    width: 25%;
+}
+
+.graph-population {
+    width: 25%;
+}
+
+.percentage {
+    height: 32px;
+    width: 50%;
+    background-color: orange;
+    border-radius: 2px;
+    margin-right: auto;
+}
