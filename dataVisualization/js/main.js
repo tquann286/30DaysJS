@@ -13,6 +13,9 @@ const sortedByPopulation = countries.sort((a, b) => b.population - a.population)
 
 population.addEventListener('click', () => {
     let numberOfCountries = Number(prompt('Input number of countries:', 10))
+    while (isNaN(numberOfCountries)) {
+        numberOfCountries = Number(prompt('Please input number:', 10))
+    } 
     let numberOfSortedCountries = sortedByPopulation.slice(0, numberOfCountries)
 
 
@@ -71,6 +74,9 @@ mostSpokenLang.sort((a, b) => b.count - a.count)
 languages.addEventListener('click', () => {
     graphs.innerHTML = ``
     let numberOfLanguages = Number(prompt('Input number of languages:', 10))
+    while (isNaN(numberOfLanguages)) {
+        numberOfLanguages = Number(prompt('Please input number:', 10))
+    }
     let numberOfSortedLanguages = mostSpokenLang.slice(0, numberOfLanguages)
 
     graphTitle.textContent = `${numberOfLanguages} Most spoken languages in the world`
@@ -87,46 +93,3 @@ languages.addEventListener('click', () => {
         `
     })
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
