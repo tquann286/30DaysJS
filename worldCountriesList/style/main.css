@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.search {
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0), rgb(4 5 16)), url(../img/globe-2.jpg);
+    background-size: cover;      
+    background-position: center;
+    position: relative;
+}
+
+.search-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(94%, -50%);
+}
+
+h1 {
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+button {
+    padding: 12px;
+    color: #fff;
+    background-color: #895be6;
+    font-weight: bold;
+    border: none;
+}
+
+button:hover {
+    background-color: #571cb7;
+}
+
+.search-input {
+    margin-top: 16px;
+}
+
+input {
+    width: 85%;
+    padding: 12px;
+    border-radius: 20px;
+    margin: 8px;
+    border: 0;
+    font-size: 16px;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+.countries-list {
+    background-color: #fefce1;
+}
+
+.countries-container {
+    padding: 64px 120px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.country {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(201 201 201 / 10%), rgb(137 137 137)), url(../img/map_image.jpg);
+    background-size: cover;      
+    background-position: center;
+    width: 162px;
+    height: 162px;
+    border-radius: 8px;
+    margin: 8px 24px;
+    font-weight: bold;
+    font-size: 18px;
+}
