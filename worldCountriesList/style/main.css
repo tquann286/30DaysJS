@@ -84,3 +84,7 @@ textarea:focus, input:focus {
     font-weight: bold;
     font-size: 18px;
 }
+
+.activated {
+    background-color: #571cb7;
+}
