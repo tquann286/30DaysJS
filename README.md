@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 30DaysJS
 <a href="https://tquann286.github.io/30DaysJS/">30 Days JS</a>
 
