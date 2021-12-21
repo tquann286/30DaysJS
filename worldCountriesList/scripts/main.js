@@ -25,7 +25,7 @@ const countryOutput = (output) => {
 }
 
 // Handle Input change event
-const handleInputEvent = (e) => {
+const handleInputEvent = () => {
     countriesContainer.innerHTML = ''
     let value = input.value
     
@@ -58,23 +58,28 @@ fullListCountries()
 startWord.addEventListener('click', e => {
     endClass.remove('activated')
     startClass.toggle('activated')
+    handleInputEvent()
 })
 
 endWord.addEventListener('click', e => {
     startClass.remove('activated')
     endClass.toggle('activated')
+    handleInputEvent()
 })
 
 arrange.addEventListener('click', e => {
     arrangeClass.toggle('activated')
+
     if (arrangeClass.contains('activated')) {
         arrange.innerHTML = `<i class="far fa-sort-alpha-down-alt"></i>`
         countries.reverse()
-    } else (
+    }
+    if (!arrangeClass.contains('activated')) {
         arrange.innerHTML = `<i class="far fa-sort-alpha-down"></i>`
-    )
+        countries.sort()
+    }
+    handleInputEvent()
 })
-
 
 input.addEventListener('input', e => handleInputEvent(e))
 
