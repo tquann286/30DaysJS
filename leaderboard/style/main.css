@@ -1,3 +1,121 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+}
+
+.inputSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: auto;
+}
+
+input, button {
+    padding: 12px;
+    border: 2px solid #f4e9e7;
+    font-size: 16px;
+    margin: 4px;
+}
+
+.add {
+    background-color: #e5c9c5;
+    text-align: center;
+    color: #fff;
+}
+
+.add:hover {
+    background-color: #e99184;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e5c9c5;
+}
+
+p {
+    text-align: center;
+    color: red;
+}
+
+::placeholder {
+    color: #d8d6d6;
+    text-transform: capitalize;
+}
+
+.name, .country {
+    text-transform: uppercase;
+}
+
+.player {
+    display: flex;
+    width: 74%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: #e5c9c5;
+    margin-bottom: 8px;
+}
+
+.nameDate, .country, .score {
+    font-weight: 500;
+    color: #635c5b;
+    margin: 0px 8px;
+}
+
+.nameDate {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+}
+
+.date {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #b3a5a8;
+}
+
+.country {
+    width: 25%;
+}
+
+.score {
+    width: 15%;
+}
+
+.tool {
+    display: flex;
+    width: 35%;
+    justify-content: end;
+    margin: 1%;
+}
+
+.tool:hover {
+    
+}
+
+.delete, .plusFive, .decreaseFive {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete:hover  , .plusFive:hover  , .decreaseFive:hover {
+    background-color: #ccdfa6;
+    border-color: #ccdfa6;
+}
+
+
+
+
+
+
+
+
+
