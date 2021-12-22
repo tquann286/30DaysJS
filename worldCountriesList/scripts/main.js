@@ -71,11 +71,11 @@ arrange.addEventListener('click', e => {
     arrangeClass.toggle('activated')
 
     if (arrangeClass.contains('activated')) {
-        arrange.innerHTML = `<i class="far fa-sort-alpha-down-alt"></i>`
+        arrange.innerHTML = `<i class="fas fa-sort-alpha-down-alt"></i>`
         countries.reverse()
     }
     if (!arrangeClass.contains('activated')) {
-        arrange.innerHTML = `<i class="far fa-sort-alpha-down"></i>`
+        arrange.innerHTML = `<i class="fas fa-sort-alpha-down"></i>`
         countries.sort()
     }
     handleInputEvent()
