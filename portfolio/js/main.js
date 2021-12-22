@@ -9,10 +9,21 @@ const hexaColor = () => {
   return hexa
 }
 
+const icon = document.querySelector('.icon')
+const nameJob = document.querySelector('.name')
+
 const jobData = [
-  '🔥  Motivational Speaker',
-  '💻  Programmer',
-  '🔥  Motivator',
-  '📒  Content creater',
-  '🌱  Educator'
+  ['🔥', 'Motivational Speaker'],
+  ['💻', 'Programmer'],
+  ['🔥', 'Motivator'],
+  ['📒', 'Content creater'],
+  ['🌱', 'Educator'],
 ]
+
+setInterval(() => {
+  const num = Math.round(Math.random()*4)
+  
+  icon.innerHTML = jobData[num][0]
+  nameJob.innerHTML = jobData[num][1]
+  nameJob.style.color = hexaColor()
+},2000)

@@ -2,3 +2,22 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+@keyframes trans {
+    0% {
+        left: 0px;
+        opacity: 0;
+    }
+    100% {
+        left: 25px;
+        opacity: 1;
+    }
+}
+
+.name, .icon {
+    display: inline-block;
+}
+
+.name {
+    position: relative;
+    animation: trans 2s linear infinite forwards;
+}
