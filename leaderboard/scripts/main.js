@@ -59,7 +59,7 @@ const showCurPlayer = () => {
             <span class="country">${eachPlayer.country}</span>
             <span class="score">${eachPlayer.score}</span>
             <div class="tool">
-                <button class="delete" style="color: red;"><i class="fal fa-trash-alt"></i></button>
+                <button class="delete" style="color: red;"><i class="fas fa-trash-alt"></i></button>
                 <button class="plusFive">+5</button>
                 <button class="decreaseFive">-5</button>
             </div>
