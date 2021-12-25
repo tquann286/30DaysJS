@@ -10,34 +10,40 @@
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1 style="margin: 0;">World Countries Data</h1>
         <h2></h2>
-        <h3>5 countries satisified the search criteria</h3>
+        <h3></h3>
     </header>
     <div class="search">
-        <input type="text" placeholder="Search countries by name, city and languages">
+        <input type="text" placeholder="Search countries by name, city and languages...">
     </div>
     <div class="sort-search">
-        <button class="sort-name">
-            NAME
-            <i class="fas fa-sort-alpha-down sort-icon"></i>
-        </button>
-        <button class="sort-capital">
-            CAPITAL
-            <i class="fas fa-sort-alpha-down sort-icon"></i>
-        </button>
-        <button class="sort-population">
-            POPULATION
-            <i class="fas fa-sort-numeric-down sort-icon"></i>
-        </button>
-        <i class="fas fa-chart-bar chart-bar"></i>
+        <button class="sort-name"></button>
+        <button class="sort-capital"></button>
+        <button class="sort-population"></button>
+        <a href="#statistics">
+            <i class="fas fa-chart-bar chart-bar"></i>
+        </a>
     </div>
 
-    <div class="container">
+    <div class="countries-container">
         
     </div>
 
+    <div id="statistics">
+        <div class="wrapper">
+            <h4 class="graph-title"></h4>
+            <div class="graphs">
+                
+            </div>
+        </div>
+    </div>
+
+    <button onclick="handleScrollToTop()" id="scroll-to-top" title="Go to top"><i class="fas fa-arrow-up scroll-to-top"></i></button>
+
+
+    <script src="./data/countriesData.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>

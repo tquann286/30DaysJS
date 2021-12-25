@@ -55,18 +55,21 @@ const fullListCountries = () => {
 }
 fullListCountries()
 
+// Handle start word click event
 startWord.addEventListener('click', e => {
     endClass.remove('activated')
     startClass.toggle('activated')
     handleInputEvent()
 })
 
+// Handle end word click event
 endWord.addEventListener('click', e => {
     startClass.remove('activated')
     endClass.toggle('activated')
     handleInputEvent()
 })
 
+// Handle arrange click event
 arrange.addEventListener('click', e => {
     arrangeClass.toggle('activated')
 

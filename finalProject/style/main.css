@@ -1,5 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;   
 }
 
 header {
@@ -60,7 +64,7 @@ input {
     margin-bottom: 24px;
 }
 
-.sort-search button {
+.sort-search button, .population , .languages {
     background-color: #eeb04c;
     font-weight: 600;
     border: 0;
@@ -81,7 +85,7 @@ input {
     color: #dba246;
 }
 
-.container {
+.countries-container {
     display: flex;
     flex-flow: row wrap;
     background-color: #efefef;
@@ -135,23 +139,85 @@ button:hover {
     background-color: #dba246;
 }
 
+.activated {
+    background-color: #dba246 !important;
+}
 
+/* Statistics */
+#statistics {
+    border-top: 1px solid #ccc;
+    background-color: #efefef;
+    padding: 48px;
+}
 
+.wrapper {
+    flex-flow: row wrap;
+} 
 
+.graphs {
+    width: 80%;
+    padding-top: 24px;
+    margin: auto;
+}
 
+.graph-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+}
 
+.graph-title {
+    text-align: center;
+}
 
+.graph-name {
+    width: 25%;
+    text-align: center;
+}
 
+.graph-population {
+    width: 25%;
+    text-align: center;
+}
 
+.percentage {
+    height: 32px;
+    width: 50%;
+    background-color: orange;
+    border-radius: 2px;
+    margin-right: auto;
+}
 
+/* .scroll-to-top {
+    color: #000;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #eeb04c;
+    padding: 18px;
+    border-radius: 50%;
+    z-index: 2;
+}
 
+.scroll-to-top:hover {
+    background-color: #dba246;
+} */
 
-
-
-
-
-
-
-
-
-
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #eeb04c;
+    padding: 18px;
+    border-radius: 50%;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+  
+#scroll-to-top:hover {
+    background-color: #dba246;
+}
