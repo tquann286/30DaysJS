@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-    --primary-color: #4daf54
+    --green-gradient: linear-gradient(to right, #4daf54, #3d8880);
+    --red-gradient: linear-gradient(315deg, #42378f 0%, #f53844 74%);
+    --white-gradient: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+    --primary-color: linear-gradient(to right, #4daf54, #3d8880);
 }
 
 @-webkit-keyframes fadeIn {
@@ -52,6 +55,9 @@ h3 {
     top: 15px;
     cursor: pointer;
     z-index: 2;
+    background-image: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card__cart {
@@ -60,9 +66,8 @@ h3 {
 }
 
 .card__img {
-    width: 90%;
+    width: 85%;
     transition: 0.5s;
-    
 }
 
 .card__img img {
@@ -81,7 +86,9 @@ h3 {
 .card__title {
     width: 80%;
     font-size: 24px;
-    color: var(--primary-color);
+    background-image: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .card__price {
@@ -112,6 +119,10 @@ h3 {
     cursor: pointer;
 }
 
+.card__size span:hover {
+    background-image: var(--primary-color);
+}
+
 .card__color span {
     width: 20px;
     height: 20px;
@@ -128,12 +139,12 @@ h3 {
     background-color: red;
 }
 
-.card__color--black {
-    background-color: black;
+.card__color--white {
+    background-color: white;
 }
 
 .card__action button {
-    background-color: var(--primary-color);
+    background-image: var(--primary-color);
     border: none;
     outline: none;
     color: white;
@@ -167,12 +178,10 @@ h3 {
     visibility: visible;
     opacity: 1;
 }
-
-
-
-
-
-
+  
+.selected {
+    background: var(--primary-color) !important;
+}
 
 
 
