@@ -1,12 +1,11 @@
 const root = document.querySelector(':root');
 const body = document.querySelector('body');
-const heart = document.querySelector('.card__heart') 
-const cart = document.querySelector('.card__cart') 
-const img = document.querySelector('.card__img') 
-const title = document.querySelector('.card__title') 
-const price = document.querySelector('.card__price') 
-const description = document.querySelector('.card__description') 
-const size = document.querySelector('.card__size') 
+const heart = document.querySelector('.card__heart')
+const cart = document.querySelector('.card__cart')
+const img = document.querySelector('.card__img')
+const title = document.querySelector('.card__title')
+const price = document.querySelector('.card__price')
+const size = document.querySelector('.card__size')
 const color = document.querySelector('.card__color')
 const green = document.querySelector('.card__color--green')
 const red = document.querySelector('.card__color--red')
@@ -17,11 +16,6 @@ const spanSize = size.querySelectorAll('span')
 
 const heartClass = heart.classList
 const cartClass = cart.classList
-
-// root.style.setProperty('--primary-color', 'red');
-
-
-// 
 
 heart.addEventListener('click', () => {
     heartClass.toggle('added')
@@ -35,7 +29,7 @@ heart.addEventListener('click', () => {
 cart.addEventListener('click', () => {
     cartClass.toggle('added')
     if (cartClass.contains('added')) {
-        cart.innerHTML = `<i class='bx bxs-cart-alt' ></i>`
+        cart.innerHTML = `<i class='bx bxs-cart-alt'></i>`
     } else {
         cart.innerHTML = `<i class='bx bx-cart-alt'></i>`
     }
@@ -76,33 +70,3 @@ white.addEventListener('click', () => {
     img.innerHTML = `<img src="./img/NikeZoomKD12White.png" alt="">`
     setTitleBodyActionStyle()
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
