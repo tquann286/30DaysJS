@@ -34,7 +34,7 @@ population.addEventListener('click', () => {
                 ${coun.name}
             </div>
             
-            <div class="percentage percenOf${coun.name}" style="width: ${coun.population / totalPopulation * 100}%;"></div>
+            <div class="percentage percenOf${coun.name}" style="width: ${coun.population / totalPopulation * 50}%;"></div>
             <div class="graph-population">${coun.population}</div>
         </div>
         `
