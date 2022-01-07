@@ -27,7 +27,7 @@ function checkEmptyError (listInput) {
         input.value = input.value.trim()
 
         if (!input.value) {
-            showError(input, 'Khong duoc de trong')
+            showError(input, 'Please fill this field')
         } else {
             showSuccess(input)
         }
@@ -55,12 +55,12 @@ function checkLengthError (input, min, max) {
     input.value = input.value.trim()
 
     if (input.value.length < min) {
-        showError(input, `Phai co it nhat ${min} ky tu`)
+        showError(input, `At least ${min} characters`)
         return true
     }
 
     if (input.value.length > max) {
-        showError(input, `Khong duoc qua ${max} ky tu`)
+        showError(input, `Max is ${max} characters`)
         return true
     }
 
@@ -70,7 +70,7 @@ function checkLengthError (input, min, max) {
 
 function checkMatchPasswordError (passwordInput, cfPasswordInput) {
     if (passwordInput.value !== cfPasswordInput.value) {
-        showError(cfPasswordInput, 'Mat khau khong trung khop')
+        showError(cfPasswordInput, 'Password does not match')
         return true
     }
     return false
