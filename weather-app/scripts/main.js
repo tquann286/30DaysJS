@@ -13,7 +13,7 @@ const body = document.querySelector('body')
 async function changeWeatherUI (capitalSearch = 'ha noi') {
     let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${capitalSearch}&appid=52856f7930554325a903fd2629980764`
     let data = await fetch(apiURL).then(res => res.json())
-    if (data.cod === 200) {
+    if (data.cod >= 200 && data < 300) {
         body.classList = ''
         city.innerText = data.name
         country.innerText = data.sys.country
