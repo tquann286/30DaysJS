@@ -33,6 +33,7 @@ body {
 	font-size: 28px;
 	color: white;
 	margin: 0 10px;
+	cursor: pointer;
 }
 
 .success {
