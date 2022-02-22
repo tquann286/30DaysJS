@@ -21,6 +21,30 @@ body {
   background: #ecf0f1;
 }
 
+.control button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  outline: navajowhite;
+  font-size: 28px;
+  color: white;
+  margin: 0 10px;
+}
+
 .success {
   background: var(--success);
+}
+
+.warning {
+  background: var(--warning);
+}
+
+.error {
+  background: var(--error);
+}
+
+.toasts {
+  position: fixed;
+  top: 10px;
+  right: 10px;
 }
